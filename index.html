@@ -4,6 +4,7 @@
     <title>Kilifi Roller Skaters</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -11,11 +12,44 @@
 <body>
     <div class="container">
         <h1>Welcome to Kilifi Roller Skaters</h1>
-        <p>we love to skate!!!</p>
+        <h2>we love to skate!!!</h2>
+
         <div class="row">
-            <div class="col-md-4" style="background-color: #1b6d85">This is the left side column</div>
-            <div class="col-md-4" style="background-color: #843534">This is the middle column</div>
-            <div class="col-md-4" style="background-color: #2b542c">This is the right side column</div>
+            <h3>The Grid System</h3>
+            <div class="col-md-4 bg-success">This is the left side column</div>
+            <div class="col-md-4 bg-danger">This is the middle column</div>
+            <div class="col-md-4 bg-primary">This is the right side column</div>
+        </div>
+
+        <div class="row">
+            <h3>Text Styles</h3>
+            <br><p>You can <mark>highlight words or text</mark> using mark tags.</p>
+            <br><p>Below is an example of blockquotes</p>
+            <blockquote>
+                <p>To the wise a word is enough.</p>
+                <footer>Gich Boy</footer>
+            </blockquote>
+            <br><p>Making use of a list:</p>
+            <dl>
+                <dt>Indoors</dt>
+                    <dd>- take a nap</dd>
+                    <dd>- watch Netflix</dd>
+                <dt>Outdoors</dt>
+                    <dd>- go back inside</dd>
+            </dl>
+            <br><p>Include code using <mark>code</mark> and <mark>pre</mark> tags:</p>
+            <p>Use the <code>setUserPass();</code> to let user create a new password.</p>
+            <p>Print even numbers between 0 and 100 using the following loop:</p>
+            <pre>
+                for n in range(101):
+                    if n % 2 == 0:
+                        print (n)
+            </pre>
+            <br><p>Press <kbd>Ctrl+Alt+Del</kbd> to lock your PC.</p>
+            <br><p>Built in text color classes:</p>
+            <p class="text-muted">¤ Text muted</p>
+            <p class="text-success">¤ Text success</p>
+            <p class="text-danger">¤ Text danger</p>
         </div>
     </div>
 </body>
